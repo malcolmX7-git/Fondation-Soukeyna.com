@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fondation Soukeyna Gueye</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #e74c3c, #c0392b);
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #fceae8;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #f26d6d;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .card {
+      background-color: #222;
+      border: 1px solid #f26d6d;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #ff8c8c;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #ddd;
+      font-size: 0.95rem;
+    }
+
+    button {
+      margin-top: 40px;
+      padding: 12px 25px;
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #c0392b;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 30px auto;
+      text-align: left;
+      background-color: #1f1f1f;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    form label {
+      display: block;
+      margin: 15px 0 5px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      padding: 30px 20px;
+      text-align: center;
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    .contact {
+      margin-top: 20px;
+      color: #eee;
+    }
+
+    .contact strong {
+      color: #f26d6d;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      .card {
+        width: 100%;
+      }
+    }
+.lien{
+    border: solid #769b879f 1px;
+    border-radius: 15px;
+    background-color: rgb(35, 187, 104);
+    margin-left: 100px;
+    padding: 7px;
+    text-align: center;
+}
+
+.lien:hover{
+    font-family: serif;
+    color: black;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SOUTENEZ LA FONDATION SOUKEYNA</h1>
+    <p>Aidez les enfants talibés à retrouver leur dignité</p>
+  </header>
+  <section>
+    <h2>Notre Histoire</h2>
+    <p>
+      Je suis Maman Thilor Sambe, fondatrice de la Fondation Soukeyna Gueye, créée en hommage à ma cousine.
+      Touchée par la souffrance des enfants talibés, j’ai décidé de m’engager pour leur rendre dignité, éducation et espoir.
+    </p>
+  </section>
+
+  <section id="soutenir">
+    <h2>Comment nous soutenir</h2>
+    <div class="actions">
+      <div class="card">
+        <h3>Faire un don</h3>
+        <p>Contribuez financièrement à nos actions via Wave ou Orange Money.</p>
+      </div>
+      <div class="card">
+        <h3>Devenir partenaire</h3>
+        <p>Engagez votre entreprise ou votre organisation à nos côtés.</p>
+      </div>
+      <div class="card">
+        <h3>Agir comme bénévole</h3>
+        <p>Offrez votre temps et vos compétences pour soutenir nos missions.</p>
+      </div>
+    </div>
+  </section>
+  <div>
+    <a href="https://wa.me/221773652078" target="_blank" class="lien">Envoyer un message</a>
+</div>
+
+  <footer>
+    <p>L'association caritative Soukeyna <br>Tous droits réservés</p>
+    <div class="contact">
+      <p><strong>Contact :</strong> El Hadji Malick Sarr</p>
+      <p>Téléphone : <strong>+221 77 365 20 78</strong></p>
+      <p>Moyens de paiement : Wave et Orange Money</p>
+    </div>
+  </footer>
+
+  <script>
+    function afficherMessage() {
+      alert("Merci pour votre soutien ! Vous pouvez envoyer un don via Wave ou Orange Money au +221 77 365 20 78.");
+    }
+
+    function envoyerMessage(event) {
+      event.preventDefault();
+      const nom = document.getElementById('nom').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      alert(`Merci ${nom} ! Votre message a été reçu :\n\n"${message}"\n\n(Nous vous répondrons à : ${email})`);
+      event.target.reset();
+    }
+  </script>
+
+</body>
+</html>
